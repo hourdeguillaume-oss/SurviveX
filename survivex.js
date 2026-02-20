@@ -43,7 +43,7 @@ canvas.onclick = function(e) {
       y: joueur.y + joueur.taille / 2,
       vx: (dx / dist) * 8 * Math.cos(angle) - (dy / dist) * 8 * Math.sin(angle),
       vy: (dx / dist) * 8 * Math.sin(angle) + (dy / dist) * 8 * Math.cos(angle),
-      rayon: 6
+      rayon: 10
     });
   }
 };
@@ -363,3 +363,4 @@ function dessiner() {
 }
 
 dessiner();
+
