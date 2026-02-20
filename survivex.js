@@ -37,13 +37,13 @@ canvas.onclick = function(e) {
   let dist = Math.sqrt(dx * dx + dy * dy);
   let nbProjectiles = tirRapide ? 3 : 1;
   for (let i = 0; i < nbProjectiles; i++) {
-    let angle = (i - 1) * 0.2;
+    let angle = (i - 1) * 0.1;
     projectiles.push({
       x: joueur.x + joueur.taille / 2,
       y: joueur.y + joueur.taille / 2,
       vx: (dx / dist) * 8 * Math.cos(angle) - (dy / dist) * 8 * Math.sin(angle),
       vy: (dx / dist) * 8 * Math.sin(angle) + (dy / dist) * 8 * Math.cos(angle),
-      rayon: 10
+      rayon: 8
     });
   }
 };
@@ -363,4 +363,5 @@ function dessiner() {
 }
 
 dessiner();
+
 
